@@ -6,7 +6,6 @@ import React, { useState } from 'react'
         <div className="counter">
             <h3>likes {count}</h3>
             <button 
-                className="btn btn-success" 
                 onClick={() => setCount(count+1)}
             >
                 Like
