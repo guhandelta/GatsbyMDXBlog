@@ -16,6 +16,7 @@ module.exports = {
         path: `src/posts/`,
       },
     },
+    `gatsby-mdx`,
     `gatsby-plugin-mdx`, // Looks for mdx files and transform them into GraphQL nodes
 
   ]
