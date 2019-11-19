@@ -7,6 +7,16 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-      `gatsby-plugin-mdx`
+    `gatsby-transformer-sharp`, 
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`, // Makes the local files available in the data layer
+      options: {
+        name: `posts`,
+        path: `src/posts/`,
+      },
+    },
+    `gatsby-plugin-mdx`, // Looks for mdx files and transform them into GraphQL nodes
+
   ]
 }
